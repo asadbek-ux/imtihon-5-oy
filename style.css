@@ -1,0 +1,626 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  width: min(1540px, 100%);
+  margin: auto;
+}
+
+.top-bar {
+  display: flex;
+  height: 48px;
+  background-color: black;
+  align-items: center;
+}
+.top-bar p {
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  color: #FAFAFA;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Poppins;
+}
+.top-bar p a {
+  padding-left: 1rem;
+  color: #FAFAFA;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: Center;
+  font-family: Poppins;
+}
+.top-bar .language-select {
+  display: flex;
+  gap: 1rem;
+  padding-right: 10rem;
+}
+.top-bar .language-select p {
+  font-family: Poppins;
+}
+
+.main-nav {
+  display: flex;
+  gap: 200px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.main-nav .logo h1 {
+  font-family: "Inter" sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+}
+.main-nav ul {
+  display: flex;
+  gap: 48px;
+}
+.main-nav ul .home-li {
+  border-bottom: 1px solid;
+}
+.main-nav ul li {
+  list-style: none;
+  opacity: 50%;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: Center;
+  color: #000000;
+}
+.main-nav .search-cart {
+  display: flex;
+  gap: 24px;
+  height: 38px;
+  align-items: center;
+}
+.main-nav .search-cart .search-bar {
+  background-color: #F5F5F5;
+  padding-inline: 1rem;
+  border-radius: 4px;
+}
+.main-nav .search-cart .search-bar input {
+  font-family: "Poppins" sans-serif;
+  border: none;
+  padding: 10px 1rem;
+  background-color: #F5F5F5;
+}
+.main-nav .search-cart .search-bar button {
+  background: none;
+  border: none;
+}
+.main-nav .search-cart .icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+hr {
+  margin-top: 2rem;
+}
+
+.iPhone {
+  margin: auto;
+  margin-top: 2rem;
+  width: min(1170px, 100%);
+  height: 344px;
+  background-color: #000000;
+  background-image: url(./img/hero_endframe__cvklg0xk3w6e_large\ 2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 64px;
+}
+.iPhone .phone {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.iPhone .phone h3 {
+  color: #FAFAFA;
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: Center;
+}
+.iPhone h1 {
+  font-family: "Poppins" sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 4%;
+  color: #FAFAFA;
+  width: 294px;
+  margin-top: 1rem;
+}
+.iPhone p {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.iPhone p a {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins" sans-serif;
+  line-height: 24px;
+  align-items: Center;
+  color: #FAFAFA;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+section hr {
+  margin: auto;
+  margin-top: 3rem;
+  width: 1170px;
+}
+
+.categories {
+  margin: auto;
+  margin-top: 4rem;
+  width: min(1170px, 100%);
+}
+.categories h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #DB4444;
+  font-family: "Poppins" sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.categories h1 {
+  font-family: "Inter" sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 4%;
+  color: #000000;
+  margin-top: 1rem;
+}
+.categories .category-filter {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.categories .category-filter button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  width: 170px;
+  height: 145px;
+  background: none;
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.3019607843);
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.categories .category-filter button i {
+  zoom: 3;
+}
+.categories .category-filter button:hover {
+  background: #DB4444;
+  transition: 0.5s;
+  color: white;
+}
+.categories .category-filter button:hover i {
+  color: white;
+}
+
+.products {
+  margin: auto;
+  margin-top: 4rem;
+  width: min(1170px, 100%);
+}
+.products .ourproducts h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #DB4444;
+  font-family: "Poppins" sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.products .ourproducts .right-left-icons {
+  margin-top: 5px;
+  text-align: end;
+}
+.products .loader {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ba5858;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  animation: spin 1s linear infinite;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.products .products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.products .products-container div {
+  width: 270px;
+}
+.products .products-container div img {
+  margin: auto;
+  box-shadow: #333;
+}
+.products .products-container div h2 {
+  font-family: "Poppins" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.products .products-container div .price {
+  color: #DB4444;
+}
+.products .seemore {
+  display: flex;
+  justify-content: center;
+}
+.products .see-more {
+  margin: auto;
+  margin-top: 3rem;
+  width: Hug 173px;
+  height: Hug 56px;
+  background-color: #DB4444;
+  border-radius: 4px;
+  font-family: "Poppins" sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FAFAFA;
+  padding: 16px 48px;
+  border: none;
+}
+
+.stars {
+  color: yellow; /* Yulduzlar rangini sariq qilib belgilash */
+}
+
+.review-count {
+  color: black;
+  opacity: 50%;
+}
+
+.login-container {
+  margin: auto;
+  margin-top: 2rem;
+  width: min(100%, 1555px);
+  height: 781px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-container img {
+  width: 919px;
+  height: 706px;
+}
+.login-container .login {
+  width: Hug 371px;
+  height: Hug 326px;
+  padding: 5rem;
+}
+.login-container .login h1 {
+  font-family: "Inter" sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: 4%;
+  color: #000000;
+}
+.login-container .login p {
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+.login-container .login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid rgb(69, 65, 65);
+}
+.login-container .login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e56a47;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.login-container .login .forgot-password {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  color: #e56a47;
+}
+
+footer {
+  margin: auto;
+  margin-top: 4rem;
+  background-color: black;
+  width: min(1550px, 100%);
+  height: 440px;
+  padding-inline: 5rem;
+  padding-top: 5rem;
+}
+footer .inner {
+  margin: auto;
+  height: 250px;
+  display: flex;
+  gap: 4rem;
+}
+footer .inner h1 {
+  font-family: "Inter" sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: #FAFAFA;
+}
+footer .inner h2 {
+  font-family: "Poppins" sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FAFAFA;
+  margin-top: 1rem;
+}
+footer .inner p {
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FAFAFA;
+  margin-top: 1rem;
+}
+footer .inner .send-email {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  border: 1.5px white solid;
+}
+footer .inner .send-email img {
+  color: white;
+}
+footer .inner .send-email input {
+  background-color: black;
+  border: none;
+  color: white;
+  outline-width: 0;
+}
+footer .inner ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .inner ul li {
+  list-style: none;
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FAFAFA;
+  opacity: 80%;
+  width: 175px;
+}
+footer .inner .for-download {
+  margin-top: 1rem;
+  width: 234px;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: auto auto;
+}
+footer .inner .icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+footer .inner .icons i {
+  color: white;
+}
+footer hr {
+  opacity: 40%;
+  color: #FFFFFF;
+}
+footer p {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.product-details-container {
+  margin: auto;
+  margin-top: 5rem;
+  width: min(1440px, 100%);
+  display: flex;
+  justify-content: space-around;
+  padding-inline: 4rem;
+}
+.product-details-container .detail {
+  width: 450px;
+}
+.product-details-container .detail h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: #000000;
+}
+.product-details-container .detail .rating {
+  margin-top: 0.8rem;
+  display: flex;
+}
+.product-details-container .detail .price {
+  font-family: "Inter" sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: #000000;
+  margin-top: 1rem;
+}
+.product-details-container .detail .description {
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 1rem;
+}
+
+.adversiting {
+  margin: auto;
+  margin-top: 4rem;
+  width: min(1170px, 100%);
+  height: 500px;
+  background-color: #000000;
+  background-image: url(./img/JBL_BOOMBOX_2_HERO_020_x1\ \(1\)\ 1.png);
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  padding: 69px 59px;
+}
+.adversiting h3 {
+  font-family: "Poppins" sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #00FF66;
+}
+.adversiting h1 {
+  width: 443px;
+  margin-top: 1.5rem;
+  font-family: "Inter" sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 4%;
+  color: #FAFAFA;
+}
+.adversiting img {
+  margin-top: 1.5rem;
+}
+.adversiting button {
+  width: 171px;
+  height: 56px;
+  margin-top: 2rem;
+  border-radius: 4px;
+  background-color: #00FF66;
+  font-family: "Poppins" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FAFAFA;
+  align-items: center;
+}
+
+.new-arrival {
+  margin: auto;
+  margin-top: 4rem;
+  width: min(1170px, 100%);
+}
+.new-arrival h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #DB4444;
+  font-family: "Poppins" sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.new-arrival h1 {
+  font-family: "Inter" sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 4%;
+  color: #000000;
+  margin-top: 1rem;
+}
+.new-arrival .container {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  grid-template-columns: auto auto;
+}
+.new-arrival .container div div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.services {
+  margin: auto;
+  margin-top: 6rem;
+  width: min(1000px, 100%);
+  display: flex;
+  justify-content: space-between;
+}
+.services .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .item h2 {
+  font-family: "Poppins" sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 1rem;
+}
+.services .item p {
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
