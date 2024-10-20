@@ -6,14 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
 const productsContainer = document.querySelector('.products-container');
 const categoryButtons = document.querySelectorAll('.category-buttons button');
 let products = []; 
 let currentIndex = 0; 
 const limit = 4; 
-
 
 
 fetch('https://fakestoreapi.com/products')
@@ -25,8 +22,6 @@ fetch('https://fakestoreapi.com/products')
     .catch(error => {
         console.error('Error fetching products:', error);
     });
-
-Fetchproducts();
 
 
 function renderProducts(filteredProducts) {
