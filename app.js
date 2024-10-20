@@ -14,8 +14,6 @@ let currentIndex = 0;
 const limit = 4; 
 
 
-    
-
 fetch('https://fakestoreapi.com/products')
     .then(response => response.json())
     .then(data => {
@@ -25,8 +23,6 @@ fetch('https://fakestoreapi.com/products')
     .catch(error => {
         console.error('Error fetching products:', error);
     });
-
-
 
 
 function renderProducts(filteredProducts) {
