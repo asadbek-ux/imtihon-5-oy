@@ -5,13 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function showLoading() {
-    document.getElementById('loading').style.display = 'block';
-}
 
-function hideLoading() {
-    document.getElementById('loading').style.display = 'none';
-}
 
 
 const productsContainer = document.querySelector('.products-container');
@@ -21,27 +15,16 @@ let currentIndex = 0;
 const limit = 4; 
 
 
-async function Fetchproducts() {
 
-    fetch('https://fakestoreapi.com/products')
-        .then(response => response.json())
-        .then(data => {
-            showLoading()
-            try {
-                products = data; 
-                renderProducts(products);
-            } catch (error) {
-                console.error('Error processing products:', error);  
-            } finally {
-                hideLoading()
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching products:', error);
-        });
-
-
-}
+fetch('https://fakestoreapi.com/products')
+    .then(response => response.json())
+    .then(data => {
+        products = data; 
+        renderProducts(products);
+    })
+    .catch(error => {
+        console.error('Error fetching products:', error);
+    });
 
 Fetchproducts();
 
