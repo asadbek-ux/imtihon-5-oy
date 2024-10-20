@@ -5,13 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function showLoading() {
-    document.getElementById('loading').style.display = 'block';
-}
 
-function hideLoading() {
-    document.getElementById('loading').style.display = 'none';
-}
 
 const productsContainer = document.querySelector('.products-container');
 const categoryButtons = document.querySelectorAll('.category-buttons button');
@@ -19,28 +13,21 @@ let products = [];
 let currentIndex = 0; 
 const limit = 4; 
 
-async function fetchproduct() {
+
     
-    fetch('https://fakestoreapi.com/products')
-        .then(response => response.json())
-        .then(data => {
-            showLoading();
-            try {
-                products = data; 
-                renderProducts(products);
-            } catch (error) {
-                console.error('Error processing products:', error);
-            } finally {
-                hideLoading(); // Hide loading once processing is complete
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching products:', error);
-        });
-}
+
+fetch('https://fakestoreapi.com/products')
+    .then(response => response.json())
+    .then(data => {
+        products = data; 
+        renderProducts(products);
+    })
+    .catch(error => {
+        console.error('Error fetching products:', error);
+    });
 
 
-fetchproduct();
+
 
 function renderProducts(filteredProducts) {
     const slicedProducts = filteredProducts.slice(currentIndex, currentIndex + limit);
